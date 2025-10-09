@@ -1,0 +1,13 @@
+{
+  "merchant_id": "walmart.com",
+  "display_name": "Walmart",
+  "accepts": {
+    "stablecoins": ["USDC", "PYUSD"],
+    "chains": ["Base", "Ethereum"],
+    "providers": ["CoinbaseCommerce", "BitPay"]
+  },
+  "payment_pages": ["https://…"],
+  "last_verified": "2025-10-09T18:00:00Z",
+  "verified_by": ["partner:bitpay", "user:0xABCD…"],
+  "evidence": ["url:https://…/checkout", "tx:base:0x…"]
+}
