@@ -1,0 +1,13 @@
+{
+  "merchant_id": "dummy.com",
+  "display_name": "Dummy",
+  "accepts": [
+    {"asset":"USDC","chain":"Base","via":"CoinbaseCommerce","confidence":0.9}
+  ],
+  "fiat_routes": ["ACH","Card"],
+  "proxies": ["GiftCardAPI","BillPayX"],
+  "payment_pages": ["https://www.dummy.com/checkout"],
+  "last_verified": "2025-10-09T18:00:00Z",
+  "verified_by": ["user:0xABCD..."],
+  "evidence": ["url:https://.../payments"]
+}

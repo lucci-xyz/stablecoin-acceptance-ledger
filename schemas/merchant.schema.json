@@ -1,0 +1,81 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "required": [
+        "merchant_id",
+        "display_name",
+        "accepts",
+        "last_verified"
+    ],
+    "properties": {
+        "merchant_id": {
+            "type": "string"
+        },
+        "display_name": {
+            "type": "string"
+        },
+        "accepts": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "required": [
+                    "asset",
+                    "chain",
+                    "via",
+                    "confidence"
+                ],
+                "properties": {
+                    "asset": {
+                        "type": "string"
+                    },
+                    "chain": {
+                        "type": "string"
+                    },
+                    "via": {
+                        "type": "string"
+                    },
+                    "confidence": {
+                        "type": "number",
+                        "minimum": 0,
+                        "maximum": 1
+                    }
+                }
+            }
+        },
+        "fiat_routes": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "proxies": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "payment_pages": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "last_verified": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "verified_by": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "evidence": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "additionalProperties": false
+}
